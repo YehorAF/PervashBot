@@ -1,9 +1,9 @@
 import bson
-from bs4 import BeautifulSoup
+# from bs4 import BeautifulSoup
 from datetime import datetime
 import random
 from redis.asyncio import Redis
-import requests
+# import requests
 import logging
 
 from aiogram import Router, F

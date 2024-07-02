@@ -51,7 +51,7 @@ async def main():
     dp.include_router(group_router)
     dp.shutdown.register(on_shutdown)
 
-    bot = Bot(token=token, parse_mode=ParseMode.HTML)
+    bot = Bot(token=token)
     
     await bot(DeleteWebhook(drop_pending_updates=True))
     await dp.start_polling(bot)
